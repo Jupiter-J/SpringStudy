@@ -28,3 +28,24 @@
 ![](https://velog.velcdn.com/images/jupiter-j/post/6b902705-4947-41f2-8356-9229f9b15515/image.png)
 #### 회원 객체 다이어그램
 ![](https://velog.velcdn.com/images/jupiter-j/post/b0af6bcc-32a5-4ab7-8e0d-c25a92d0e78c/image.png)
+
+---
+# 주문과 할인 도메인 설계
+### 주문과 할인 정책
+- 회원은 상품을 주문할 수 있다.
+- 회원 등급에 따라 할인 정책을 적용할 수 있다.
+- 할인 정책은 모든 VIP는 1000원을 할인해주는 고정 금액 할인을 적용해달라. (나중에 변경 될 수 있다.)
+- 할인 정책은 변경 가능성이 높다. 회사의 기본 할인 정책을 아직 정하지 못했고, 오픈 직전까지 고민을 미루고 싶다. 최악의 경우 할인을 적용하지 않을 수 도 있다. (미확정)
+
+### 주문 도메인 협력, 역할, 책임
+![](https://velog.velcdn.com/images/jupiter-j/post/968f31ae-6128-4f4d-94e0-212251363dba/image.png)
+### 주문 도메인 전체
+![](https://velog.velcdn.com/images/jupiter-j/post/5b22b7a6-26c4-45f6-99a7-ef088e00f523/image.png)
+- 역할과 구현체를 분리 
+- 역할을 먼저 설정하여 
+### 주문 도메인 클래스 다이어그램
+![](https://velog.velcdn.com/images/jupiter-j/post/05a35b87-9d02-4eda-93a5-0fefb92a011d/image.png)
+### 주문 도메인 객체 다이어그램1
+![](https://velog.velcdn.com/images/jupiter-j/post/bcc8e3c1-0608-4a1a-bedd-0eb7095ab226/image.png)
+### 주문 도메인 객체 다이어그램2
+![](https://velog.velcdn.com/images/jupiter-j/post/cc17933d-1399-4e71-9d36-a670365e744c/image.png)

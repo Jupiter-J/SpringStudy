@@ -1,4 +1,4 @@
-package study.dev.spring;
+package study.dev.spring.member;
 
 public enum Grade {
     BASIC,
