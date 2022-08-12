@@ -29,6 +29,8 @@
 #### 회원 객체 다이어그램
 ![](https://velog.velcdn.com/images/jupiter-j/post/b0af6bcc-32a5-4ab7-8e0d-c25a92d0e78c/image.png)
 
+<br>
+
 ---
 # 주문과 할인 도메인 설계
 ### 주문과 할인 정책
@@ -49,3 +51,9 @@
 ![](https://velog.velcdn.com/images/jupiter-j/post/bcc8e3c1-0608-4a1a-bedd-0eb7095ab226/image.png)
 ### 주문 도메인 객체 다이어그램2
 ![](https://velog.velcdn.com/images/jupiter-j/post/cc17933d-1399-4e71-9d36-a670365e744c/image.png)
+
+<br>
+
+---
+# 새로운 할인 정책 개발
+- 금액당 할인하는 정률% 할인으로 변경하고 싶어요. 예를 들어서 기존 정책은 VIP가 10000원을 주문하든 20000원을 주문하든 항상 1000원을 할인했는데, 이번에 새로 나온 정책은 10%로 지정해두면 고객이 10000원 주문시 1000원을 할인해주고, 20000원 주문시에 2000원을 할인해준다
