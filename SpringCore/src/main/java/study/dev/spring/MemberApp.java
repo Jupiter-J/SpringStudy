@@ -1,5 +1,7 @@
 package study.dev.spring;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import study.dev.spring.member.Grade;
 import study.dev.spring.member.Member;
 import study.dev.spring.member.service.MemberService;
@@ -7,8 +9,12 @@ import study.dev.spring.member.service.MemberServiceImpl;
 
 public class MemberApp {
     public static void main(String[] args) {
-        AppConfig appConfig = new AppConfig();
-        MemberService memberService = appConfig.memberService();
+//        AppConfig appConfig = new AppConfig();
+//        MemberService memberService = appConfig.memberService();
+
+        /**SpringContainer에 등록*/
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        MemberService memberService = applicationContext.getBean("memberService",MemberService.class);
 
         // MemberService memberService = new MemberServiceImpl();
         Member member = new Member(1L, "memberA", Grade.VIP);

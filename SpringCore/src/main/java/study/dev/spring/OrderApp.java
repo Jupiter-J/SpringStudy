@@ -1,5 +1,7 @@
 package study.dev.spring;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import study.dev.spring.member.Grade;
 import study.dev.spring.member.Member;
 import study.dev.spring.member.service.MemberService;
@@ -10,9 +12,14 @@ import study.dev.spring.order.service.OrderServiceImpl;
 
 public class OrderApp {
     public static void main(String[] args) {
-        AppConfig appConfig = new AppConfig();
-        MemberService memberService = appConfig.memberService();
-        OrderService orderService = appConfig.orderService();
+
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
+        OrderService orderService = applicationContext.getBean("orderService", OrderService.class);
+
+//        AppConfig appConfig = new AppConfig();
+//        MemberService memberService = appConfig.memberService();
+//        OrderService orderService = appConfig.orderService();
         //    MemberService memberService = new MemberServiceImpl(null);
         //    OrderService orderService = new OrderServiceImpl(null,null);
 
