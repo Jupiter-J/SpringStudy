@@ -1,10 +1,12 @@
 package study.dev.spring.member.repository;
 
+import org.springframework.stereotype.Component;
 import study.dev.spring.member.Member;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class MemoryMemberRepository implements MemberRepository{
 
     //저장소
